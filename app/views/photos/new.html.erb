@@ -36,6 +36,15 @@
         <%= select_tag(:user_id, options_from_collection_for_select(User.all, :id, :id, @photo.user_id), :class => "form-control") %>
       </div>
 
+      <!-- Label and input for image_name -->
+      <div class="form-group">
+        <label for="image_name" class="control-label">
+          Image name
+        </label>
+
+        <input type="text" id="image_name" name="image_name" placeholder="Image name" class="form-control" value="<%= @photo.image_name %>">
+      </div>
+
       <button class="btn btn-success">
         Create Photo
       </button>
