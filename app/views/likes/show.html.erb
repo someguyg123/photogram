@@ -9,7 +9,7 @@
       <dd>
         <% if @like.photo.present? %>
           <a href="/photos/<%= @like.photo_id %>">
-            <%= @like.photo.created_at %>
+            <%= @like.photo.id %>
           </a>
         <% end %>
       </dd>

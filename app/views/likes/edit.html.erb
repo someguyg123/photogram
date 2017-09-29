@@ -24,7 +24,7 @@
           Photo
         </label>
 
-        <%= select_tag(:photo_id, options_from_collection_for_select(Photo.all, :id, :created_at, @like.photo_id), :class => "form-control") %>
+        <%= select_tag(:photo_id, options_from_collection_for_select(Photo.all, :id, :id, @like.photo_id), :class => "form-control") %>
       </div>
 
       <!-- Label and input for user_id -->
